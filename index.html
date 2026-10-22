@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123a32">
+  <title>Pusat Sumber Pembelajaran MRSM Kuantan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="PSP MRSM Kuantan">
+    <div class="brand-mark">PSP</div>
+    <div><strong id="site-title">PUSAT SUMBER PEMBELAJARAN MRSM KUANTAN</strong><small id="site-tagline">Gateway to Knowledge and Academic Excellence</small></div>
+  </a>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+  <nav id="main-nav">
+    <a href="#home">Utama</a><a href="#about">Tentang PSP</a><a href="#facilities">Kemudahan</a>
+    <a href="#services">Perkhidmatan</a><a href="#announcements">Pengumuman</a><a href="#gallery">Galeri</a><a href="#contact">Hubungi</a>
+    <a class="admin-link" href="admin.html">Admin ↗</a>
+  </nav>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="hero-copy"><span class="eyebrow">PUSAT SUMBER PEMBELAJARAN</span>
+      <h1 id="welcome-title">Selamat Datang ke Pusat Sumber Pembelajaran MRSM Kuantan</h1>
+      <p id="welcome-message">Ruang untuk meneroka ilmu, mengembangkan idea dan mencapai kecemerlangan akademik.</p>
+      <div class="hero-actions"><a class="btn btn-light" href="#services">Teroka perkhidmatan</a><a class="btn btn-outline" href="#facilities">Lihat kemudahan</a></div>
+    </div>
+    <div class="hero-photo" id="hero-photo" role="img" aria-label="Bangunan Pusat Sumber Pembelajaran"></div>
+  </section>
+  <section class="quick-links section-wrap" id="services">
+    <div class="section-heading"><div><span class="eyebrow">AKSES PANTAS</span><h2>Perkhidmatan PSP</h2></div><p>Akses sistem dan sumber pembelajaran dalam satu tempat.</p></div>
+    <div class="service-grid" id="service-grid"></div>
+  </section>
+  <section class="announcement-section" id="announcements"><div class="section-wrap">
+    <div class="section-heading"><div><span class="eyebrow">INFO TERKINI</span><h2>Pengumuman</h2></div><p>Maklumat dan aktiviti terkini PSP.</p></div>
+    <div id="announcement-list" class="announcement-grid"></div>
+  </div></section>
+  <section class="section-wrap" id="facilities"><div class="section-heading"><div><span class="eyebrow">RUANG PEMBELAJARAN</span><h2>Kemudahan Kami</h2></div><p>Ruang yang menyokong pembelajaran, kolaborasi dan kreativiti.</p></div>
+    <div id="facility-grid" class="facility-grid"></div>
+  </section>
+  <section class="video-section"><div class="section-wrap video-layout"><div><span class="eyebrow">JELAJAH PSP</span><h2>Kenali PSP MRSM Kuantan</h2><p id="video-caption">Tonton video untuk mengenali ruang dan kemudahan kami.</p></div>
+    <div class="video-frame" id="video-frame"><div class="video-placeholder">Video PSP akan dipaparkan di sini.</div></div>
+  </div></section>
+  <section class="section-wrap" id="gallery"><div class="section-heading"><div><span class="eyebrow">SEKITAR PSP</span><h2>Galeri</h2></div><p>Aktiviti, ruang dan detik pembelajaran.</p></div><div id="gallery-grid" class="gallery-grid"></div></section>
+  <section class="booking-section" id="booking"><div class="section-wrap booking-layout"><div><span class="eyebrow">TEMPAHAN RUANG</span><h2>V-Booking PSP</h2><p>Pilih tarikh untuk membuat permohonan tempahan bilik atau kemudahan. Tempahan tertakluk pada pengesahan pihak PSP.</p><a class="btn btn-primary" href="#booking-calendar">Lihat kalendar</a></div>
+    <div class="calendar-card" id="booking-calendar"><div class="calendar-top"><button id="prev-month" aria-label="Bulan sebelumnya">‹</button><h3 id="calendar-month"></h3><button id="next-month" aria-label="Bulan seterusnya">›</button></div><div class="calendar-grid calendar-weekdays"><span>Isn</span><span>Sel</span><span>Rab</span><span>Kha</span><span>Jum</span><span>Sab</span><span>Aha</span></div><div id="calendar-days" class="calendar-grid"></div>
+      <form id="booking-form" class="booking-form"><h3>Permohonan tempahan</h3><label>Tarikh dipilih<input id="booking-date" type="date" required></label><label>Nama pemohon<input id="booking-name" required placeholder="Nama penuh"></label><label>Ruang / kemudahan<select id="booking-room"><option>Bilik Perbincangan</option><option>Bilik Seminar</option><option>Ruang Komputer</option><option>Ruang Aktiviti</option><option>Lain-lain</option></select></label><label>Masa<input id="booking-time" required placeholder="Contoh: 2.00–3.00 petang"></label><label>Catatan<textarea id="booking-notes" rows="2" placeholder="Tujuan tempahan / bilangan pengguna"></textarea></label><button class="btn btn-primary" type="submit">Hantar permohonan</button><p class="form-note" id="booking-status">Permohonan akan disimpan apabila sambungan pangkalan data diaktifkan.</p></form>
+    </div>
+  </div></section>
+  <section class="section-wrap info-row" id="about"><div><span class="eyebrow">TENTANG KAMI</span><h2 id="about-title">Gerbang ilmu dan kecemerlangan akademik</h2><p id="about-text">Pusat Sumber Pembelajaran menyediakan akses kepada bahan rujukan, teknologi dan ruang pembelajaran untuk warga MRSM Kuantan.</p></div>
+    <div class="hours-card"><h3>Waktu operasi</h3><div id="opening-hours"></div><p class="form-note">Waktu operasi boleh berubah mengikut takwim dan pengumuman PSP.</p></div></section>
+  <section class="contact-band" id="contact"><div class="section-wrap contact-inner"><div><span class="eyebrow">HUBUNGI KAMI</span><h2>Jom manfaatkan PSP</h2><p id="contact-text">Pusat Sumber Pembelajaran MRSM Kuantan</p></div><a id="school-link" class="btn btn-light" href="https://kuantan.mrsm.edu.my/" target="_blank" rel="noopener">Laman rasmi MRSM Kuantan ↗</a></div></section>
+</main>
+<footer><div class="footer-brand">PSP <span>MRSM KUANTAN</span></div><p>© <span id="year"></span> Pusat Sumber Pembelajaran MRSM Kuantan · Portal maklumat dan perkhidmatan</p><a href="admin.html">Log masuk admin</a></footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script type="module" src="app.js"></script>
+</body></html>

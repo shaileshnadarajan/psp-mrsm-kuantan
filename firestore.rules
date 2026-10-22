@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    // Public site content can be read by visitors; only signed-in admins can edit.
+    // For production, restrict writes to explicitly approved admin emails or custom claims.
+    match /site/{document} {
+      allow read: if true;
+      allow write: if signedIn();
+    }
+    // Visitors can submit booking requests; only signed-in admins can read/manage them.
+    match /bookings/{bookingId} {
+      allow create: if request.resource.data.keys().hasAll(['date','name','room','time','status','createdAt'])
+                    && request.resource.data.name is string
+                    && request.resource.data.name.size() <= 120
+                    && request.resource.data.date is string;
+      allow read, update, delete: if signedIn();
+    }
+  }
+}
