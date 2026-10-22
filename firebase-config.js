@@ -1,13 +1,11 @@
-// 1) Create a Firebase project at https://console.firebase.google.com/
-// 2) Register a Web App and paste its config below.
-// 3) Enable Authentication > Email/Password, Firestore Database and Storage.
-// 4) Create the admin user in Authentication manually. Never place passwords here.
+
 export const firebaseConfig = {
-  apiKey: "PASTE_YOUR_FIREBASE_API_KEY",
-  authDomain: "PASTE_YOUR_PROJECT.firebaseapp.com",
-  projectId: "PASTE_YOUR_PROJECT_ID",
-  storageBucket: "PASTE_YOUR_PROJECT.firebasestorage.app",
-  messagingSenderId: "PASTE_YOUR_MESSAGING_SENDER_ID",
-  appId: "PASTE_YOUR_APP_ID"
+  apiKey: "AIzaSyA8DpT9-hZpet_cQnRhvf7KzbqfqKa6SVA",
+  authDomain: "psp-mrsm-kuantan.firebaseapp.com",
+  projectId: "psp-mrsm-kuantan",
+  storageBucket: "psp-mrsm-kuantan.firebasestorage.app",
+  messagingSenderId: "902767973601",
+  appId: "1:902767973601:web:94d9292f99303c5e85e53a0"
 };
-export const firebaseReady = !Object.values(firebaseConfig).some(v => v.startsWith("PASTE_"));
+
+export const firebaseReady = true;
